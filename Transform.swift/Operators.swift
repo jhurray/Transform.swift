@@ -66,11 +66,11 @@ public func + (lhs: CATransform3D, rhs: CATransform3D) -> CATransform3D {
 // MARK: Assignment
 
 public func += (inout lhs: Transform, rhs: Transform) {
-    lhs.append(lhs)
+    lhs.concat(lhs)
 }
 
 public func += (inout lhs: Transform3D, rhs: Transform3D) {
-    lhs.append(lhs)
+    lhs.concat(lhs)
 }
 
 public func += (inout lhs: CGAffineTransform, rhs: Transform) {

@@ -13,7 +13,7 @@ import UIKit
 
 extension UIView {
     
-    var affineTransform: Transform {
+    public var affineTransform: Transform {
         get {
             return Transform.Custom(t: self.transform)
         }
@@ -22,7 +22,7 @@ extension UIView {
         }
     }
     
-    var transform3D: Transform3D {
+    public var transform3D: Transform3D {
         get {
             return Transform3D.Custom(t: self.layer.transform)
         }

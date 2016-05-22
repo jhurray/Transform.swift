@@ -21,12 +21,16 @@ public enum Transform3D {
     case Affine(t: CGAffineTransform)
     case Custom(t: CATransform3D)
     
-    var CATransform : CATransform3D {
+    public var CATransform : CATransform3D {
         return self.underlyingTransform()
     }
     
-    func affineTransform() throws -> CGAffineTransform {
-        if CATransform3DIsAffine(self.CATransform) {
+    public var isAffine: Bool {
+        return CATransform3DIsAffine(self.CATransform)
+    }
+    
+    public func affineTransform() throws -> CGAffineTransform {
+        if self.isAffine {
             return CATransform3DGetAffineTransform(self.CATransform)
         }
         else {
@@ -34,15 +38,15 @@ public enum Transform3D {
         }
     }
     
-    var isIdentity: Bool {
+    public var isIdentity: Bool {
         return CATransform3DIsIdentity(self.CATransform)
     }
     
-    var inverted: Transform3D {
+    public var inverted: Transform3D {
         return Transform3D.Custom(t: CATransform3DInvert(self.CATransform))
     }
     
-    mutating func append(t: Transform3D) {
+    public mutating func concat(t: Transform3D) {
         self = Transform3D.Custom(t: CATransform3DConcat(self.CATransform, t.CATransform))
     }
     

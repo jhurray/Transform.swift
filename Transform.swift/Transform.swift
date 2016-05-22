@@ -18,31 +18,31 @@ public enum Transform {
     case Init(a: CGFloat, b: CGFloat, c: CGFloat, d: CGFloat, tx: CGFloat, ty: CGFloat)
     case Custom(t: CGAffineTransform)
     
-    var CGATransform : CGAffineTransform {
+    public var CGATransform : CGAffineTransform {
         return self.underlyingTransform()
     }
     
-    var isIdentity: Bool {
+    public var isIdentity: Bool {
         return CGAffineTransformIsIdentity(self.CGATransform)
     }
     
-    var inverted: Transform {
+    public var inverted: Transform {
         return Transform.Custom(t: CGAffineTransformInvert(self.CGATransform))
     }
     
-    mutating func append(t: Transform) {
+    public mutating func concat(t: Transform) {
         self = Transform.Custom(t: CGAffineTransformConcat(self.CGATransform, t.CGATransform))
     }
     
-    func transformedRect(rect: CGRect) -> CGRect {
+    public func transformedRect(rect: CGRect) -> CGRect {
         return CGRectApplyAffineTransform(rect, self.CGATransform)
     }
     
-    func transformedSize(size: CGSize) -> CGSize {
+    public func transformedSize(size: CGSize) -> CGSize {
         return CGSizeApplyAffineTransform(size, self.CGATransform)
     }
     
-    func transformedPoint(point: CGPoint) -> CGPoint {
+    public func transformedPoint(point: CGPoint) -> CGPoint {
         return CGPointApplyAffineTransform(point, self.CGATransform)
     }
     
