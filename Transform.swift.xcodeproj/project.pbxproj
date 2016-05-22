@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2609D7821CF11F8E000299B9 /* Transform3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2609D7811CF11F8E000299B9 /* Transform3D.swift */; };
+		2609D7841CF11F99000299B9 /* Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2609D7831CF11F99000299B9 /* Rotation.swift */; };
+		2609D7861CF256D7000299B9 /* UIView+Transform3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2609D7851CF256D7000299B9 /* UIView+Transform3D.swift */; };
+		2609D7881CF25BE5000299B9 /* Transform3DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2609D7871CF25BE5000299B9 /* Transform3DTests.swift */; };
+		2609D7981CF26064000299B9 /* Transform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2609D78E1CF26064000299B9 /* Transform.framework */; };
+		2609D7A51CF2616C000299B9 /* Transform.swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 265F48B31CF0F06200DB6387 /* Transform.swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2609D7A61CF26179000299B9 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265F48BC1CF0F0E000DB6387 /* Transform.swift */; };
+		2609D7A71CF26179000299B9 /* Transform3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2609D7811CF11F8E000299B9 /* Transform3D.swift */; };
+		2609D7A81CF26179000299B9 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265F48C11CF0F46B00DB6387 /* Operators.swift */; };
+		2609D7A91CF26179000299B9 /* Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2609D7831CF11F99000299B9 /* Rotation.swift */; };
+		2609D7AA1CF26179000299B9 /* UIView+Transform3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2609D7851CF256D7000299B9 /* UIView+Transform3D.swift */; };
+		2609D7AC1CF26202000299B9 /* TransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266846261CF10E7A003981FF /* TransformTests.swift */; };
+		2609D7AD1CF26202000299B9 /* Transform3DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2609D7871CF25BE5000299B9 /* Transform3DTests.swift */; };
+		265F48B41CF0F06200DB6387 /* Transform.swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 265F48B31CF0F06200DB6387 /* Transform.swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		265F48BD1CF0F0E000DB6387 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265F48BC1CF0F0E000DB6387 /* Transform.swift */; };
+		265F48C21CF0F46B00DB6387 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265F48C11CF0F46B00DB6387 /* Operators.swift */; };
+		2668461F1CF10430003981FF /* Transform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265F48B01CF0F06200DB6387 /* Transform.framework */; };
+		266846271CF10E7A003981FF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266846251CF10E7A003981FF /* Info.plist */; };
+		266846291CF10F34003981FF /* TransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266846261CF10E7A003981FF /* TransformTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2609D7991CF26064000299B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 265F48A71CF0F06200DB6387 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2609D78D1CF26064000299B9;
+			remoteInfo = "Transform tvOS";
+		};
+		266846201CF10430003981FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 265F48A71CF0F06200DB6387 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 265F48AF1CF0F06200DB6387;
+			remoteInfo = "Transform iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2609D7811CF11F8E000299B9 /* Transform3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transform3D.swift; sourceTree = "<group>"; };
+		2609D7831CF11F99000299B9 /* Rotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rotation.swift; sourceTree = "<group>"; };
+		2609D7851CF256D7000299B9 /* UIView+Transform3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Transform3D.swift"; sourceTree = "<group>"; };
+		2609D7871CF25BE5000299B9 /* Transform3DTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transform3DTests.swift; path = TransformTests/Transform3DTests.swift; sourceTree = SOURCE_ROOT; };
+		2609D78E1CF26064000299B9 /* Transform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Transform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2609D7971CF26064000299B9 /* TransformTests tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TransformTests tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		265F48B01CF0F06200DB6387 /* Transform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Transform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		265F48B31CF0F06200DB6387 /* Transform.swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transform.swift.h; sourceTree = "<group>"; };
+		265F48B51CF0F06200DB6387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		265F48BC1CF0F0E000DB6387 /* Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transform.swift; sourceTree = "<group>"; };
+		265F48C11CF0F46B00DB6387 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		265F48C31CF0FB8D00DB6387 /* Transform.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Transform.playground; sourceTree = "<group>"; };
+		2668461A1CF10430003981FF /* TransformTests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TransformTests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		266846251CF10E7A003981FF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TransformTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		266846261CF10E7A003981FF /* TransformTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransformTests.swift; path = TransformTests/TransformTests.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2609D78A1CF26064000299B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2609D7941CF26064000299B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2609D7981CF26064000299B9 /* Transform.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265F48AC1CF0F06200DB6387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		266846171CF10430003981FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2668461F1CF10430003981FF /* Transform.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		265F48A61CF0F06200DB6387 = {
+			isa = PBXGroup;
+			children = (
+				265F48C31CF0FB8D00DB6387 /* Transform.playground */,
+				265F48B21CF0F06200DB6387 /* Transform.swift */,
+				2668461B1CF10430003981FF /* TransformTests */,
+				265F48B11CF0F06200DB6387 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		265F48B11CF0F06200DB6387 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				265F48B01CF0F06200DB6387 /* Transform.framework */,
+				2668461A1CF10430003981FF /* TransformTests iOS.xctest */,
+				2609D78E1CF26064000299B9 /* Transform.framework */,
+				2609D7971CF26064000299B9 /* TransformTests tvOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		265F48B21CF0F06200DB6387 /* Transform.swift */ = {
+			isa = PBXGroup;
+			children = (
+				265F48BB1CF0F0CD00DB6387 /* Source */,
+				265F48B31CF0F06200DB6387 /* Transform.swift.h */,
+				265F48B51CF0F06200DB6387 /* Info.plist */,
+			);
+			path = Transform.swift;
+			sourceTree = "<group>";
+		};
+		265F48BB1CF0F0CD00DB6387 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				265F48BC1CF0F0E000DB6387 /* Transform.swift */,
+				2609D7811CF11F8E000299B9 /* Transform3D.swift */,
+				265F48C11CF0F46B00DB6387 /* Operators.swift */,
+				2609D7831CF11F99000299B9 /* Rotation.swift */,
+				2609D7851CF256D7000299B9 /* UIView+Transform3D.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		2668461B1CF10430003981FF /* TransformTests */ = {
+			isa = PBXGroup;
+			children = (
+				266846251CF10E7A003981FF /* Info.plist */,
+				266846261CF10E7A003981FF /* TransformTests.swift */,
+				2609D7871CF25BE5000299B9 /* Transform3DTests.swift */,
+			);
+			name = TransformTests;
+			path = "TransformTests iOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2609D78B1CF26064000299B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2609D7A51CF2616C000299B9 /* Transform.swift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265F48AD1CF0F06200DB6387 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265F48B41CF0F06200DB6387 /* Transform.swift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2609D78D1CF26064000299B9 /* Transform tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2609D79F1CF26064000299B9 /* Build configuration list for PBXNativeTarget "Transform tvOS" */;
+			buildPhases = (
+				2609D7891CF26064000299B9 /* Sources */,
+				2609D78A1CF26064000299B9 /* Frameworks */,
+				2609D78B1CF26064000299B9 /* Headers */,
+				2609D78C1CF26064000299B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Transform tvOS";
+			productName = "Transform tvOS";
+			productReference = 2609D78E1CF26064000299B9 /* Transform.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2609D7961CF26064000299B9 /* TransformTests tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2609D7A21CF26064000299B9 /* Build configuration list for PBXNativeTarget "TransformTests tvOS" */;
+			buildPhases = (
+				2609D7931CF26064000299B9 /* Sources */,
+				2609D7941CF26064000299B9 /* Frameworks */,
+				2609D7951CF26064000299B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2609D79A1CF26064000299B9 /* PBXTargetDependency */,
+			);
+			name = "TransformTests tvOS";
+			productName = "Transform tvOSTests";
+			productReference = 2609D7971CF26064000299B9 /* TransformTests tvOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		265F48AF1CF0F06200DB6387 /* Transform iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 265F48B81CF0F06200DB6387 /* Build configuration list for PBXNativeTarget "Transform iOS" */;
+			buildPhases = (
+				265F48AB1CF0F06200DB6387 /* Sources */,
+				265F48AC1CF0F06200DB6387 /* Frameworks */,
+				265F48AD1CF0F06200DB6387 /* Headers */,
+				265F48AE1CF0F06200DB6387 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Transform iOS";
+			productName = Transform.swift;
+			productReference = 265F48B01CF0F06200DB6387 /* Transform.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		266846191CF10430003981FF /* TransformTests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 266846241CF10430003981FF /* Build configuration list for PBXNativeTarget "TransformTests iOS" */;
+			buildPhases = (
+				266846161CF10430003981FF /* Sources */,
+				266846171CF10430003981FF /* Frameworks */,
+				266846181CF10430003981FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				266846211CF10430003981FF /* PBXTargetDependency */,
+			);
+			name = "TransformTests iOS";
+			productName = "TransformTests iOS";
+			productReference = 2668461A1CF10430003981FF /* TransformTests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		265F48A71CF0F06200DB6387 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = jhurray;
+				TargetAttributes = {
+					2609D78D1CF26064000299B9 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					2609D7961CF26064000299B9 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					265F48AF1CF0F06200DB6387 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					266846191CF10430003981FF = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 265F48AA1CF0F06200DB6387 /* Build configuration list for PBXProject "Transform.swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 265F48A61CF0F06200DB6387;
+			productRefGroup = 265F48B11CF0F06200DB6387 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				265F48AF1CF0F06200DB6387 /* Transform iOS */,
+				266846191CF10430003981FF /* TransformTests iOS */,
+				2609D78D1CF26064000299B9 /* Transform tvOS */,
+				2609D7961CF26064000299B9 /* TransformTests tvOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2609D78C1CF26064000299B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2609D7951CF26064000299B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265F48AE1CF0F06200DB6387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				266846271CF10E7A003981FF /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		266846181CF10430003981FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2609D7891CF26064000299B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2609D7A61CF26179000299B9 /* Transform.swift in Sources */,
+				2609D7A71CF26179000299B9 /* Transform3D.swift in Sources */,
+				2609D7A81CF26179000299B9 /* Operators.swift in Sources */,
+				2609D7A91CF26179000299B9 /* Rotation.swift in Sources */,
+				2609D7AA1CF26179000299B9 /* UIView+Transform3D.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2609D7931CF26064000299B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2609D7AC1CF26202000299B9 /* TransformTests.swift in Sources */,
+				2609D7AD1CF26202000299B9 /* Transform3DTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265F48AB1CF0F06200DB6387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265F48BD1CF0F0E000DB6387 /* Transform.swift in Sources */,
+				2609D7841CF11F99000299B9 /* Rotation.swift in Sources */,
+				2609D7821CF11F8E000299B9 /* Transform3D.swift in Sources */,
+				265F48C21CF0F46B00DB6387 /* Operators.swift in Sources */,
+				2609D7861CF256D7000299B9 /* UIView+Transform3D.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		266846161CF10430003981FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				266846291CF10F34003981FF /* TransformTests.swift in Sources */,
+				2609D7881CF25BE5000299B9 /* Transform3DTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2609D79A1CF26064000299B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2609D78D1CF26064000299B9 /* Transform tvOS */;
+			targetProxy = 2609D7991CF26064000299B9 /* PBXContainerItemProxy */;
+		};
+		266846211CF10430003981FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 265F48AF1CF0F06200DB6387 /* Transform iOS */;
+			targetProxy = 266846201CF10430003981FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2609D7A01CF26064000299B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Transform.swift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guarenteed.Transform-tvOS";
+				PRODUCT_NAME = Transform;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		2609D7A11CF26064000299B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Transform.swift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guarenteed.Transform-tvOS";
+				PRODUCT_NAME = Transform;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		2609D7A31CF26064000299B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TransformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guarenteed.Transform-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		2609D7A41CF26064000299B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TransformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guarenteed.Transform-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		265F48B61CF0F06200DB6387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		265F48B71CF0F06200DB6387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		265F48B91CF0F06200DB6387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Transform.swift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guarenteed.Transform-swift";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = Transform;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		265F48BA1CF0F06200DB6387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Transform.swift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guarenteed.Transform-swift";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = Transform;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		266846221CF10430003981FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TransformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guarenteed.TransformTests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		266846231CF10430003981FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TransformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guarenteed.TransformTests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2609D79F1CF26064000299B9 /* Build configuration list for PBXNativeTarget "Transform tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2609D7A01CF26064000299B9 /* Debug */,
+				2609D7A11CF26064000299B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2609D7A21CF26064000299B9 /* Build configuration list for PBXNativeTarget "TransformTests tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2609D7A31CF26064000299B9 /* Debug */,
+				2609D7A41CF26064000299B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		265F48AA1CF0F06200DB6387 /* Build configuration list for PBXProject "Transform.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265F48B61CF0F06200DB6387 /* Debug */,
+				265F48B71CF0F06200DB6387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		265F48B81CF0F06200DB6387 /* Build configuration list for PBXNativeTarget "Transform iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265F48B91CF0F06200DB6387 /* Debug */,
+				265F48BA1CF0F06200DB6387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		266846241CF10430003981FF /* Build configuration list for PBXNativeTarget "TransformTests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				266846221CF10430003981FF /* Debug */,
+				266846231CF10430003981FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 265F48A71CF0F06200DB6387 /* Project object */;
+}
