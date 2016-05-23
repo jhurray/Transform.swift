@@ -32,7 +32,7 @@ Add the following to your **Podfile**:
 ```ruby
 use_frameworks!
 
-pod 'Transform.swift', '~> 0.1.1'
+pod 'Transform.swift', '~> 0.1.2'
 ```
 
 ####[Carthage](https://github.com/Carthage/Carthage)
@@ -40,7 +40,7 @@ pod 'Transform.swift', '~> 0.1.1'
 Add the following to your **Cartfile**:
 
 ```
-gitub "jhurray/Transform.swift" ~> 0.1.1
+gitub "jhurray/Transform.swift" ~> 0.1.2
 ```
 
 ##Usage
