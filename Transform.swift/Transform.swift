@@ -31,6 +31,7 @@ public enum Transform {
     }
     
     public mutating func concat(t: Transform) {
+        
         self = Transform.Custom(t: CGAffineTransformConcat(self.CGATransform, t.CGATransform))
     }
     

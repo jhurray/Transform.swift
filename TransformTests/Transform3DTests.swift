@@ -27,7 +27,7 @@ class Transform3DTests: XCTestCase {
     
     func testIdentity() {
         XCTAssertTrue(CATransform3DIdentity == Transform3D.Indentity.CATransform)
-        XCTAssertTrue(Transform.Indentity.isIdentity)
+        XCTAssertTrue(Transform3D.Indentity.isIdentity)
     }
     
     func testTranslation() {
@@ -71,7 +71,30 @@ class Transform3DTests: XCTestCase {
         let t1b = CATransform3DMakeTranslation(100, -100, 200)
         let t1 = t1a + t1b
         let t2: Transform3D = .Scale(sx: 100, sy: -100, sz: 200) + .Translate(tx: 100, ty: -100, tz: 200)
+        var t3 = Transform3D.Indentity
+        t3.concat(.Scale(sx: 100, sy: -100, sz: 200))
+        t3.concat(.Translate(tx: 100, ty: -100, tz: 200))
         XCTAssertTrue(t1 == t2)
+        XCTAssertTrue(t1 == t3)
+    }
+    
+    func testIsAffine() {
+        XCTAssertTrue(Transform3D.Scale(sx: 2, sy: -1, sz: 1).isAffine)
+        XCTAssertFalse(Transform3D.Scale(sx: 2, sy: -1, sz: -8.8).isAffine)
+    }
+    
+    func testMakeAffine() {
+        let t1 = CGAffineTransformMakeScale(2.0, -1.0)
+        let t2 = try! Transform3D.Scale(sx: 2, sy: -1, sz: 1).affineTransform()
+        XCTAssertTrue(t1 == t2)
+        
+        do {
+            let _ = try Transform3D.Scale(sx: 2, sy: -1, sz: -8.8).affineTransform()
+            XCTFail()
+        }
+        catch let error {
+            XCTAssertTrue(error is Transform3DError)
+        }
     }
 
 }

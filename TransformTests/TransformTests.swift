@@ -72,7 +72,13 @@ class TransformTests: XCTestCase {
         let t1b = CGAffineTransformMakeTranslation(100, -100)
         let t1 = t1a + t1b
         let t2 = .Scale(sx: 100, sy: -100) + .Translate(tx: 100, ty: -100)
+        let t3a = Transform.Scale(sx: 100, sy: -100)
+        let t3b = Transform.Translate(tx: 100, ty: -100)
+        var t3 = Transform.Indentity
+        t3.concat(t3a)
+        t3.concat(t3b)
         XCTAssertTrue(t1 == t2)
+        XCTAssertTrue(t1 == t3)
     }
     
     func testRectAfterTransform() {
