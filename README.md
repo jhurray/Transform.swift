@@ -8,7 +8,7 @@ let rotate = Transform.Rotate(rotation: .Degrees(45))
 let scaleAndRotate = scale + rotate
 myView.transform += scaleAndRotate
 
-myView.transform3D = .Translate(tx: 40, ty: 0, tz: 100).CATransform
+myView.transform3D = .Translate(tx: 40, ty: 0, tz: 100)
 ```
 
 <p align="center">
@@ -23,7 +23,7 @@ myView.transform3D = .Translate(tx: 40, ty: 0, tz: 100).CATransform
 
 </p>
 
-##Instalation
+##Installation
 
 ####[CocoaPods](https://cocoapods.org/)
 
@@ -112,7 +112,7 @@ public func affineTransform() throws -> CGAffineTransform
 
 * Inverting: `let inverted = t.inverted`
 * Identity Conformation: `let isIdentity = t.isIdentity`
-* Concatenation: `let scaleAndMove = .Scale(sx: 0.5, sy:1).concat(.Translate(tx: 40, ty: -100))`
+* Concatenation: `let scaleAndMove = scale.concat(.Translate(tx: 40, ty: -100))`
 
 ###Operators
 
