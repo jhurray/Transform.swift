@@ -61,7 +61,7 @@ A convenience enum that allows the developer to easily define the rotation they 
 * `.Scale(sx: CGFloat, sy: CGFloat)`
 * `.Rotate(rotation: Rotation)`
 * `.Init(a: CGFloat, b: CGFloat, c: CGFloat, d: CGFloat, tx: CGFloat, ty: CGFloat)` for the adventurous type 😎
-* `Custom(t: CGAffineTransform)`
+* `.Custom(t: CGAffineTransform)`
 
 ####Methods
 
