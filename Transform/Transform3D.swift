@@ -14,12 +14,12 @@ public enum Transform3DError: ErrorType {
 }
 
 public enum Transform3D {
-    case Indentity
-    case Translate(tx: CGFloat, ty: CGFloat, tz: CGFloat)
-    case Scale(sx: CGFloat, sy: CGFloat, sz: CGFloat)
-    case Rotate(rotation: Rotation, x: CGFloat, y: CGFloat, z: CGFloat)
-    case Affine(t: CGAffineTransform)
-    case Custom(t: CATransform3D)
+    case indentity
+    case translate(tx: CGFloat, ty: CGFloat, tz: CGFloat)
+    case scale(sx: CGFloat, sy: CGFloat, sz: CGFloat)
+    case rotate(rotation: Rotation, x: CGFloat, y: CGFloat, z: CGFloat)
+    case affine(t: CGAffineTransform)
+    case custom(t: CATransform3D)
     
     public var CATransform : CATransform3D {
         return self.underlyingTransform()
@@ -43,26 +43,26 @@ public enum Transform3D {
     }
     
     public var inverted: Transform3D {
-        return Transform3D.Custom(t: CATransform3DInvert(self.CATransform))
+        return .custom(t: CATransform3DInvert(self.CATransform))
     }
     
     public mutating func concat(t: Transform3D) {
-        self = Transform3D.Custom(t: CATransform3DConcat(self.CATransform, t.CATransform))
+        self = .custom(t: CATransform3DConcat(self.CATransform, t.CATransform))
     }
     
     internal func underlyingTransform() -> CATransform3D {
         switch self {
-        case .Indentity:
+        case .indentity:
             return CATransform3DIdentity
-        case .Scale(let sx, let sy, let sz):
+        case .scale(let sx, let sy, let sz):
             return CATransform3DMakeScale(sx, sy, sz)
-        case .Translate(let tx, let ty, let tz):
+        case .translate(let tx, let ty, let tz):
             return CATransform3DMakeTranslation(tx, ty, tz)
-        case .Rotate(let rotation, let x, let y, let z):
-            return CATransform3DMakeRotation(rotation.radians(), x, y, z)
-        case .Custom(let t):
+        case .rotate(let rotation, let x, let y, let z):
+            return CATransform3DMakeRotation(rotation.radians, x, y, z)
+        case .custom(let t):
             return t
-        case .Affine(let t):
+        case .affine(let t):
             return CATransform3DMakeAffineTransform(t)
         }
     }

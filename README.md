@@ -3,12 +3,12 @@
 Transform.swift offers a *Swiftier* API for applying transforms to UIView and its subclasses.
 
 ```swift 
-let scale = Transform.Scale(sx: 0.5, sy: 0.5)
-let rotate = Transform.Rotate(rotation: .Degrees(45))
+let scale = Transform.scale(sx: 0.5, sy: 0.5)
+let rotate = Transform.rotate(rotation: .degrees(45))
 let scaleAndRotate = scale + rotate
 myView.transform += scaleAndRotate
 
-myView.transform3D = .Translate(tx: 40, ty: 0, tz: 100)
+myView.transform3D = .translate(tx: 40, ty: 0, tz: 100)
 ```
 
 <p align="center">
@@ -50,18 +50,18 @@ gitub "jhurray/Transform.swift" ~> 0.1.2
 ###Rotation
 A convenience enum that allows the developer to easily define the rotation they want. The cases are pretty self explanitory.
 
-* `.Degrees(degrees: CGFloat)`
-* `.Radians(radians: Double)`
+* `.degrees(degrees: CGFloat)`
+* `.radians(radians: Double)`
    * Takes a double to make it easier to pass the `M_PI` definitions from `Darwin.C.Math` 
 
 ###Transform
 
-* `.Identity`
-* `.Translate(tx: CGFloat, ty: CGFloat)`
-* `.Scale(sx: CGFloat, sy: CGFloat)`
-* `.Rotate(rotation: Rotation)`
-* `.Init(a: CGFloat, b: CGFloat, c: CGFloat, d: CGFloat, tx: CGFloat, ty: CGFloat)` for the adventurous type 😎
-* `.Custom(t: CGAffineTransform)`
+* `.identity`
+* `.translate(tx: CGFloat, ty: CGFloat)`
+* `.scale(sx: CGFloat, sy: CGFloat)`
+* `.rotate(rotation: Rotation)`
+* `.init(a: CGFloat, b: CGFloat, c: CGFloat, d: CGFloat, tx: CGFloat, ty: CGFloat)` for the adventurous type 😎
+* `.custom(t: CGAffineTransform)`
 
 ####Methods
 
@@ -81,12 +81,12 @@ public var CGATransform: CGAffineTransform { get }
 
 ###Transform3D
 
-* `.Identity`
-* `.Translate(tx: CGFloat, ty: CGFloat, tz: CGFloat)`
-* `.Scale(sx: CGFloat, sy: CGFloat, sz: CGFloat)`
-* `.Rotate(rotation: Rotation, x: CGFloat, y: CGFloat, z: CGFloat)`
-* `.Affine(t: CGAffineTransform)`
-* `.Custom(t: CATransform3D)`
+* `.identity`
+* `.translate(tx: CGFloat, ty: CGFloat, tz: CGFloat)`
+* `.scale(sx: CGFloat, sy: CGFloat, sz: CGFloat)`
+* `.rotate(rotation: Rotation, x: CGFloat, y: CGFloat, z: CGFloat)`
+* `.affine(t: CGAffineTransform)`
+* `.custom(t: CATransform3D)`
 
 ####Methods
 
@@ -96,7 +96,7 @@ Returns the underlying `CATransform3D`
 public var CATransform : CATransform3D { get }
 ```
 
-Returns a `true` if the 3d transform can be converted into an affine transform, `false` if it cannot.
+Returns `true` if the 3d transform can be converted into an affine transform, `false` if it cannot.
 
 ```swift
 public var isAffine: Bool { get }
@@ -112,7 +112,7 @@ public func affineTransform() throws -> CGAffineTransform
 
 * Inverting: `let inverted = t.inverted`
 * Identity Conformation: `let isIdentity = t.isIdentity`
-* Concatenation: `let scaleAndMove = scale.concat(.Translate(tx: 40, ty: -100))`
+* Concatenation: `let scaleAndMove = scale.concat(.translate(tx: 40, ty: -100))`
 
 ###Operators
 
@@ -141,7 +141,7 @@ public func affineTransform() throws -> CGAffineTransform
    * Semantics to assign the transform enum to the old API since you cant overload the `=` operator.
 
 ###UIView Extension
-2 Variables have been added to `UIView` to add settable and gettable interfaces for `Transform` and `Transform3D`.
+Two variables have been added to `UIView` to add settable and gettable interfaces for `Transform` and `Transform3D`.
 
 ```swift
 var affineTransform: Transform

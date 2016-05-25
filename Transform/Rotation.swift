@@ -11,15 +11,15 @@ import GLKit.GLKMathUtils
 
 public enum Rotation {
     
-    case Degrees(CGFloat)
+    case degrees(CGFloat)
     // Using Double type to support 𝞹 definitions in Darwin.C.Math
-    case Radians(Double)
+    case radians(Double)
     
-    internal func radians() -> CGFloat {
+    internal var radians: CGFloat {
         switch self {
-        case .Degrees(let degrees):
+        case .degrees(let degrees):
             return CGFloat(GLKMathDegreesToRadians(Float(degrees)))
-        case .Radians(let radians):
+        case .radians(let radians):
             return CGFloat(radians)
         }
     }
