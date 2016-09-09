@@ -48,11 +48,11 @@ public func == (lhs: CATransform3D, rhs: Transform3D) -> Bool {
 // MARK: Additive
 
 public func + (lhs: Transform, rhs: Transform) -> Transform {
-    return Transform.Custom(t: CGAffineTransformConcat(lhs.underlyingTransform(), rhs.underlyingTransform()))
+    return .custom(t: CGAffineTransformConcat(lhs.underlyingTransform(), rhs.underlyingTransform()))
 }
 
 public func + (lhs: Transform3D, rhs: Transform3D) -> Transform3D {
-    return Transform3D.Custom(t: CATransform3DConcat(lhs.underlyingTransform(), rhs.underlyingTransform()))
+    return .custom(t: CATransform3DConcat(lhs.underlyingTransform(), rhs.underlyingTransform()))
 }
 
 public func + (lhs: CGAffineTransform, rhs: CGAffineTransform) -> CGAffineTransform {

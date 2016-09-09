@@ -15,7 +15,7 @@ extension UIView {
     
     public var affineTransform: Transform {
         get {
-            return Transform.Custom(t: self.transform)
+            return .custom(t: self.transform)
         }
         set {
             self.transform = newValue.underlyingTransform()
@@ -24,7 +24,7 @@ extension UIView {
     
     public var transform3D: Transform3D {
         get {
-            return Transform3D.Custom(t: self.layer.transform)
+            return .custom(t: self.layer.transform)
         }
         set {
             self.layer.transform = newValue.underlyingTransform()
